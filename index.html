@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+  <h1>Calculator</h1>
+    </div>
+    <div class="calculator">
+        <div class="txt" id="answer"></div>
+        <div class="box">
+            <div class="line box0">
+                <button class="btn1" onclick="appendButton('7')">7</button>
+                <button class="btn1" onclick="appendButton('8')">8</button>
+                <button class="btn1" onclick="appendButton('9')">9</button>
+                <button class="btn1" onclick="appendButton('/')" >/</button>
+            </div>
+            <div class="line box1">
+                <button class="btn1" onclick="appendButton('4')">4</button>
+                <button class="btn1" onclick="appendButton('5')">5</button>
+                <button class="btn1" onclick="appendButton('6')">6</button>
+                <button class="btn1" onclick="appendButton('*')">*</button>
+            </div>
+            <div class="line box2">
+                <button class="btn1" onclick="appendButton('3')">3</button>
+                <button class="btn1" onclick="appendButton('2')">2</button>
+                <button class="btn1" onclick="appendButton('1')">1</button>
+                <button class="btn1" onclick="appendButton('-')">-</button>
+            </div>
+            <div class="line box3">
+                <button class="btn1" onclick="clearAnswer()">C</button>
+                <button class="btn1" onclick="appendButton('0')">0</button>
+                <button class="btn1" onclick="appendButton('.')">.</button>
+                <button class="btn1" onclick="appendButton('+')">+</button>
+            </div>
+            <div class="line box4">
+                <button class="btn1" onclick="solveAnswer()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
